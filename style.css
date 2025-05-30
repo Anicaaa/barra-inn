@@ -16,6 +16,10 @@ html {
     margin: 0 auto;
 }
 
+.outfit-font {
+    font-family: "Outfit", sans-serif;
+}
+
 /* Mobile menu hidden by default */
 .mobile-menu {
     background-color: #e8e7e7;
@@ -44,10 +48,10 @@ html {
 
 /* Navbar */
 .navbar {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(254, 254, 254, 0.95);
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 1000;
 }
 
 .navbar .container {
@@ -63,6 +67,11 @@ html {
     color: #000;
     text-align: center;
     margin: 0.5rem 0;
+}
+
+.subtitle {
+    text-align: center;
+    margin: 1.5rem 0;
 }
 
 .menu-toggle {
@@ -97,26 +106,56 @@ html {
     color: #000000;
 }
 
-/* Hero Section */
-.hero {
-    background: url('https://www.reef-tiree.com/images/background.jpg') no-repeat center center/cover;
-    height: 100vh;
+/* --- Adventure Section --- */
+.adventure-section {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1500px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.adventure-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.adventure-image,
+.adventure-text {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center everything horizontally */
     text-align: center;
+    /* Center text like the paragraph */
+}
+
+.adventure-text p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.book-button {
+    display: inline-block;
+    background-color: #333;
     color: white;
-    padding: 0 1rem;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
 }
 
-.hero-text h1 {
-    font-size: 3rem;
-}
-
-.hero-text p {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    color: #000000;
+.book-button:hover {
+    background-color: #555;
 }
 
 /* Footer */
@@ -160,4 +199,19 @@ html {
     .navbar .container {
         padding-bottom: 0;
     }
+
+        .adventure-section {
+            flex-direction: column;
+            padding: 1rem;
+        }
+    
+        .adventure-image,
+        .adventure-text {
+            flex: 1 1 100%;
+            text-align: center;
+        }
+    
+        .adventure-text p {
+            padding: 0 1rem;
+        }
 }
