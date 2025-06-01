@@ -58,7 +58,6 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 0 0.5rem;
 }
 
 .logo {
@@ -133,9 +132,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Center everything horizontally */
     text-align: center;
-    /* Center text like the paragraph */
 }
 
 .adventure-text p {
@@ -156,6 +153,72 @@ html {
 
 .book-button:hover {
     background-color: #555;
+}
+
+/* Free Your Spirit Section */
+.section-free-your-spirit {
+    display: flex;
+    max-width: 1200px;
+    margin: 60px auto;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+}
+
+.free-your-spirit-image {
+    flex: 1;
+}
+
+.free-your-spirit-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.free-your-spirit-content {
+    flex: 1;
+    background-color: #e6e6e6;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.free-your-spirit-title {
+    font-size: 32px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+.free-your-spirit-description {
+    font-size: 18px;
+    line-height: 1.6; }
+
+/* Carousel Slider */
+.main-carousel {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-cell {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.carousel-cell img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.container-padding {
+    padding: 2rem;
+    max-width: 1500px;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 /* Footer */
@@ -200,18 +263,24 @@ html {
         padding-bottom: 0;
     }
 
-        .adventure-section {
-            flex-direction: column;
-            padding: 1rem;
-        }
+    .adventure-section {
+        flex-direction: column;
+    }
     
-        .adventure-image,
-        .adventure-text {
-            flex: 1 1 100%;
-            text-align: center;
-        }
+    .adventure-image,
+    .adventure-text {
+        flex: 1 1 100%;
+        text-align: center;
+    }
     
-        .adventure-text p {
-            padding: 0 1rem;
-        }
+    .adventure-text p {
+        padding: 0 1rem;
+    }
+    .section-free-your-spirit {
+        flex-direction: column;
+    }
+    
+    .free-your-spirit-content {
+        padding: 30px 20px;  
+    }
 }

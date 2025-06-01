@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <!-- Flickity CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
 <body>
@@ -39,13 +41,11 @@
     </header>
 
     <h2 class="subtitle">ISLE OF BARRA</h2>
-
-    <div class="wrapper">
     
         <!-- Hero Block A -->
         <section class="adventure-section">
             <div class="adventure-image">
-                <img src="images/2.jpg" alt="Tiree Adventure" />
+                <img src="images/2.jpg" alt="Barra Inn" />
             </div>
             <div class="adventure-text">
                 <p>
@@ -58,7 +58,13 @@
                 <a href="#booking" class="book-button">Book Now</a>
             </div>
         </section>
-    
+
+        <!-- Carousel Slider -->
+        <div class="main-carousel container-padding">
+            <div class="carousel-cell"><img src="images/3.jpg" alt="Slide 1"></div>
+            <div class="carousel-cell"><img src="images/19.jpg" alt="Slide 2"></div>
+            <div class="carousel-cell"><img src="images/4.jpg" alt="Slide 3"></div>
+            <div class="carousel-cell"><img src="images/20.jpg" alt="Slide 3"></div>
         </div>
 
     <footer class="footer">
@@ -66,8 +72,9 @@
             <p>© 2025 Barra Inn. All rights reserved.</p>
         </div>
     </footer>
+    <!-- Flickity JS -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="script.js"></script>
-
 </body>
 
 </html>
