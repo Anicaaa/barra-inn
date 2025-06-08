@@ -25,4 +25,5 @@ const flkty = new Flickity(elem, {
   lazyLoad: true,
   autoPlay: 3000,
   pauseAutoPlayOnHover: true,
+  pageDots: false,
 });
