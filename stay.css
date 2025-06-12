@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
+
+}
+
+.center-wrapper {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pc-image {
+    min-width: 100%;
+    width: 215px;
+    height: 300px;
+    object-fit: cover;
+}
