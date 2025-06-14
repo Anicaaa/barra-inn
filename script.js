@@ -1,3 +1,4 @@
+console.log("script.js is connected");
 //menu mobile
 const toggle = document.querySelector(".menu-toggle");
 const mobileMenu = document.getElementById("mobileMenu");

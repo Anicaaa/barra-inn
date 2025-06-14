@@ -7,10 +7,51 @@
     <link rel="stylesheet" href="stay.css">
 </head>
 <body>
-    <h1>This page is going to have a box with images of the guesthouse, including bathroom, dining room, outdoors and bedrooms</h1>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo outfit-font">BARRA INN</div>
+            <a href="#" class="menu-toggle">menu</a>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">home</a>
+            <a href="stay.html">stay</a>
+            <a href="#">eat + drink</a>
+            <a href="#">barra time</a>
+            <a href="#">location</a>
+            <a href="#">contact</a>
+        </nav>
+    
+        <!-- Mobile Dropdown -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html">home</a>
+            <a href="#">stay</a>
+            <a href="#">eat + drink</a>
+            <a href="#">barra time</a>
+            <a href="#">location</a>
+            <a href="#">contact</a>
+        </div>
+    </header>
+    
+    <h2 class="subtitle">ISLE OF BARRA</h2>
 
     <main class="center-wrapper">
-        <div class="container">
+
+        <div class="availability-box">
+        
+            <div class="availability-field">
+                <label class="checkin" for="checkin">Check-In</label>
+                <input type="date" id="checkin" name="checkin">
+            </div>
+        
+            <div class="availability-field">
+                <label class="checkout" for="checkout">Check-Out</label>
+                <input type="date" id="checkout" name="checkout">
+            </div>
+        
+            <button class="availability-button">Check Availability</button>
+        </div>    
+
+        <div class="container-two">
     
             <div class="stay-image">
                 <img class="pc-image" src="images/16.jpg" alt="">
@@ -46,6 +87,6 @@
     
         </div>
     </main>
-    
+    <script src="script.js"></script>
 </body>
 </html>
