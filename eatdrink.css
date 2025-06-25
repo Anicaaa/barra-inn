@@ -164,6 +164,27 @@ html {
     margin: 20px 0;
 }
 
+.gallery-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.columns {
+    width: 100%;
+    column-width: 300px;
+    gap: 1em;
+}
+
+.columns img {
+    width: 100%;
+    object-fit: cover;
+    padding: 4px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
     body {
