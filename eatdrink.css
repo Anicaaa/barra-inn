@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: 1px solid rgb(228, 194, 194);
 }
 
 body,
@@ -103,6 +102,66 @@ html {
 
 .nav-links a:hover {
     color: #000000;
+}
+
+/* Reservation Box */
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.reservation-widget {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 16px;
+    max-width: 300px;
+    font-family: sans-serif;
+}
+
+.reservation-widget h2 {
+    margin-top: 0;
+}
+
+.reservation-widget form {
+    display: grid;
+    grid-gap: 8px;
+}
+
+.reservation-widget label {
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+}
+
+.reservation-widget button {
+    display: block;
+    margin: 0 auto;
+    background: rgb(244, 238, 177);
+    color: #000;
+    border: none;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.reservation-widget button:hover {
+    background-color: rgb(255, 251, 206);
+}
+
+.reservation-widget .alt {
+    margin-top: 12px;
+    font-size: 0.85em;
+    color: #666;
+}
+
+.book-table {
+    text-align: center;
+    margin: 20px 0;
 }
 
 /* Mobile Styles */

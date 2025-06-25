@@ -36,6 +36,38 @@
 
     <h2 class="subtitle">ISLE OF BARRA</h2>
 
+    <!-- Reservation Box -->
+    <main class="wrapper">
+    <div class="reservation-widget">
+        <div class="book-table">
+        <h2>Book a Table</h2>
+        <p>Reserve in advance below or call: <a href="tel:+441879220680">07502812512</a></p>
+        </div>
+        <form action="https://yourbookinglink.com" method="GET" target="_blank">
+            <label>
+                Date:
+                <input type="date" name="date" required>
+            </label>
+            <label>
+                Time:
+                <input type="time" name="time" required>
+            </label>
+            <label>
+                Guests:
+                <select name="guests" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="2">4</option>
+                    <option value="3">5+</option>
+                </select>
+            </label>
+            <button type="submit">Book now</button>
+        </form>
+    </div>
+    </main>
+  
+
     <script src="script.js"></script>
 </body>
 
