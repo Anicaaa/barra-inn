@@ -104,64 +104,100 @@ html {
     color: #000000;
 }
 
-/* Reservation Box */
-
 .wrapper {
     display: flex;
     justify-content: center;
-    margin: 50px 0;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+    padding: 1rem;
 }
 
+/* Reservation widget container */
 .reservation-widget {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 16px;
-    max-width: 300px;
-    font-family: sans-serif;
-}
-
-.reservation-widget h2 {
-    margin-top: 0;
-}
-
-.reservation-widget form {
-    display: grid;
-    grid-gap: 8px;
-}
-
-.reservation-widget label {
-    font-size: 0.9em;
-    display: flex;
-    flex-direction: column;
-}
-
-.reservation-widget button {
-    display: block;
-    margin: 0 auto;
-    background: rgb(244, 238, 177);
-    color: #000;
-    border: none;
-    padding: 15px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.reservation-widget button:hover {
-    background-color: rgb(255, 251, 206);
-}
-
-.reservation-widget .alt {
-    margin-top: 12px;
-    font-size: 0.85em;
-    color: #666;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
 }
 
 .book-table {
     text-align: center;
-    margin: 20px 0;
+    margin-bottom: 1.5rem;
+}
+
+.book-table h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.book-table p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.book-table a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.book-table a:hover {
+    text-decoration: underline;
+}
+
+/* Label and form inputs */
+form {
+    margin-top: 1rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: grey;
+    text-align: left;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 0.5rem 0;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    /* Underline */
+    background: transparent;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    outline: none;
+    color: grey;
+}
+
+/* On focus, underline turns blue */
+form input:focus,
+form select:focus {
+    border-bottom-color: rgb(100, 100, 100);
+}
+
+/* Submit button style */
+form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: rgb(244, 238, 177);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: rgb(255, 251, 206);
 }
 
 .gallery-wrapper {

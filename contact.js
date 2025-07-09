@@ -13,8 +13,20 @@ submitBtn.addEventListener("click", async (e) => {
   const subject = subjectInput.value.trim();
   const message = messageInput.value.trim();
 
+  function showPopup(message, duration = 3000) {
+    const popup = document.getElementById("popup");
+    popup.textContent = message;
+    popup.classList.remove("hidden");
+    popup.classList.add("show");
+
+    setTimeout(() => {
+      popup.classList.remove("show");
+      popup.classList.add("hidden");
+    }, duration);
+  }
+
   if (!name || !email || !phone || !subject || !message) {
-    alert("Please fill out all fields.");
+    showPopup("Please fill out all fields.");
     return;
   }
 
@@ -29,7 +41,7 @@ submitBtn.addEventListener("click", async (e) => {
     });
 
     if (response.ok) {
-      alert("Message sent successfully!");
+      showPopup("Message sent successfully!");
 
       nameInput.value = "";
       emailInput.value = "";
@@ -38,9 +50,11 @@ submitBtn.addEventListener("click", async (e) => {
       messageInput.value = "";
     } else {
       const error = await response.json();
-      alert(`Failed to send the message: ${error.message || "Unknown error"}`);
+      showPopup(
+        `Failed to send the message: ${error.message || "Unknown error"}`
+      );
     }
   } catch (error) {
-    alert(`An error occurred: ${error.message}`);
+    showPopup(`An error occurred: ${error.message}`);
   }
 });
