@@ -128,46 +128,41 @@ html {
 }
 
 .availability-button {
-    background-color: rgb(244, 238, 177);
-    color: black;
+    background-color: #009000;
+    color: white;
     padding: 14px 24px;
     border: none;
     font-size: 1rem;
-    font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .availability-button:hover {
-    background-color: rgb(255, 251, 206);
+    background-color: #71BC78;
 }
 
 .checkin, .checkout {
     font-weight: bold;
 }
 
-.container-two {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
-}
-
-.center-wrapper {
-    width: 100%;
+.gallery-wrapper {
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 1rem;
+    margin: 0 auto;
+    padding-top: 30px;
 }
 
-.pc-image {
+.columns {
     width: 100%;
-    height: auto;
-    aspect-ratio: 3 / 4;
+    column-width: 300px;
+    gap: 1em;
+}
+
+.columns img {
+    width: 100%;
     object-fit: cover;
-    display: block;
+    padding: 4px;
+    border-radius: 8px;
+
 }
 
 /* Footer */

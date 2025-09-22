@@ -147,16 +147,17 @@ html {
 .contact-form button {
     width: 100%;
     padding: 0.75rem;
-    background-color: rgb(244, 238, 177);
+    background-color: #009000;
     border: none;
     color: white;
     font-size: 1rem;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-    background-color: rgb(255, 251, 206);
+    background-color: #71BC78;
 }
 
 .popup {
