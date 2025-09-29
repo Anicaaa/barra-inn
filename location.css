@@ -183,7 +183,6 @@ html {
 /* Map container */
 .map-container {
     margin-top: 25px;
-    border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -199,10 +198,6 @@ html {
 
 /* Mobile Styles */
 @media (max-width: 1280px) {
-    body {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
 
     .menu-toggle {
         display: block;
@@ -252,34 +247,34 @@ html {
         font-size: 1.1rem;
     }
 
-        .image-with-box-container {
-            display: block;
-            height: auto;
-        }
+    .image-with-box-container {
+        display: block;
+        height: auto;
+    }
     
-        .background-image {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            display: block;
-        }
+    .background-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
     
-        .text-overlay {
-            position: relative;
-            width: 100%;
-            max-width: 600px;
-            margin: 0 auto;
-            top: -25px;
-            right: -15px;
-            padding: 1.5rem;
-            background-color: #f5f5f5;
-        }
+    .text-overlay {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        top: -25px;
+        right: -15px;
+        padding: 1.5rem;
+        background-color: #f5f5f5;
+    }
     
-        .text-overlay h2 {
-            font-size: 1.5rem;
-        }
+    .text-overlay h2 {
+        font-size: 1.5rem;
+    }
     
-        .text-overlay p {
-            font-size: 0.95rem;
-        }
+    .text-overlay p {
+        font-size: 0.95rem;
+    }
 }

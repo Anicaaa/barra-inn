@@ -1,3 +1,6 @@
+/* ===========================
+   RESET & BASE STYLES
+=========================== */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,6 +13,9 @@ html {
     line-height: 1.6;
 }
 
+/* ===========================
+   LAYOUT UTILITIES
+=========================== */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -20,7 +26,9 @@ html {
     font-family: "Outfit", sans-serif;
 }
 
-/* Mobile menu hidden by default */
+/* ===========================
+   MOBILE MENU
+=========================== */
 .mobile-menu {
     background-color: #e8e7e7;
     text-align: center;
@@ -45,7 +53,9 @@ html {
     max-height: 500px;
 }
 
-/* Navbar */
+/* ===========================
+   NAVBAR
+=========================== */
 .navbar {
     background-color: rgba(254, 254, 254, 0.95);
     position: sticky;
@@ -85,7 +95,9 @@ html {
     color: #000000;
 }
 
-/* Nav links */
+/* ===========================
+   NAV LINKS
+=========================== */
 .nav-links {
     display: flex;
     justify-content: center;
@@ -104,43 +116,15 @@ html {
     color: #000000;
 }
 
-/* Adventure Section */
-.adventure-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 2rem;
-    max-width: 1500px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-}
-
-.adventure-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto;
-}
-
-.adventure-image,
-.adventure-text {
-    flex: 1 1 45%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.adventure-text p {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
+/* ===========================
+   WELCOME SECTION
+   (text + book button)
+=========================== */
+.book-box-btn {
+    padding-top: 30px;
 }
 
 .book-button {
-    display: inline-block;
     background: #009000;
     color: white;
     padding: 15px 15px;
@@ -154,7 +138,9 @@ html {
     background-color: #71BC78;
 }
 
-/* Carousel */
+/* ===========================
+   CAROUSEL
+=========================== */
 .main-carousel {
     width: 100%;
     margin: 0 auto;
@@ -181,7 +167,9 @@ html {
     flex-wrap: wrap;
 }
 
-/* Image with Text Overlay */
+/* ===========================
+   IMAGE WITH TEXT OVERLAY
+=========================== */
 .image-with-box-container {
     position: relative;
     width: 100%;
@@ -225,14 +213,18 @@ html {
     color: #9b9b9b;
 }
 
-/* Map */
+/* ===========================
+   MAP
+=========================== */
 .map-container {
-    display: flex;
-    justify-content: center;
-    margin: 50px 0;
+    margin-top: 25px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Address Box */
+/* ===========================
+   ADDRESS BOX
+=========================== */
 .address-box {
     display: block;
     justify-content: center;
@@ -245,7 +237,9 @@ html {
     padding: 5px 0;
 }
 
-/* Footer */
+/* ===========================
+   FOOTER
+=========================== */
 .footer {
     background-color: #333;
     color: white;
@@ -253,12 +247,11 @@ html {
     text-align: center;
 }
 
-/* Mobile Styles */
-@media (max-width: 768px) {
-    body {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
+/* ===========================
+   RESPONSIVE STYLES
+   (for screens <= 1176px)
+=========================== */
+@media (max-width: 1176px) {
 
     .menu-toggle {
         display: block;
@@ -290,20 +283,6 @@ html {
 
     .navbar .container {
         padding-bottom: 0;
-    }
-
-    .adventure-section {
-        flex-direction: column;
-    }
-
-    .adventure-image,
-    .adventure-text {
-        flex: 1 1 100%;
-        text-align: center;
-    }
-
-    .adventure-text p {
-        padding: 0 1rem;
     }
 
     .image-with-box-container {
