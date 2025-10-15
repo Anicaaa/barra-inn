@@ -120,6 +120,12 @@ html {
    WELCOME SECTION
    (text + book button)
 =========================== */
+.home-info {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
 .book-box-btn {
     padding-top: 30px;
 }
@@ -230,7 +236,7 @@ html {
     justify-content: center;
     text-align: center;
     color: #9c9c9c;
-    padding-bottom: 30px;
+    padding: 30px;
 }
 
 .address-box p {
@@ -283,6 +289,11 @@ html {
 
     .navbar .container {
         padding-bottom: 0;
+    }
+
+    .home-info {
+        padding: 20px;
+        margin: 30px 15px 50px 15px;
     }
 
     .image-with-box-container {
