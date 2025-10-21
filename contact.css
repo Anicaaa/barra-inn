@@ -199,11 +199,6 @@ html {
   
 /* Mobile Styles */
 @media (max-width: 768px) {
-    body {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
     .menu-toggle {
         display: block;
     }

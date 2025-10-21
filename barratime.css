@@ -159,7 +159,7 @@ html {
 
 /* Mobile Styles */
 @media (max-width: 1176px) {
-    body {
+    .wrapper {
         padding-left: 1rem;
         padding-right: 1rem;
     }
