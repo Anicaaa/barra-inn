@@ -200,7 +200,7 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked~.menu-content {
     max-height: 300px;
-    padding: 1rem;
+    overflow-y: auto;
 }
 
 /* Availability box for table reservation */
@@ -221,8 +221,9 @@ input[type="checkbox"]:checked~.menu-content {
 
 /* individual fields */
 .availability-field {
-    width: 100%;
-    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 /* labels */
@@ -244,18 +245,15 @@ input[type="checkbox"]:checked~.menu-content {
 }
 
 /* button */
-.book-now-button {
+.book-button {
     background-color: #009000;
     color: white;
     padding: 14px 24px;
-    border: none;
+    border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 100%;
-    max-width: 200px;
-    height: 44px;
-    text-align: center;
+    text-decoration: none;
 }
 
 .book-now-button:hover {
@@ -333,14 +331,6 @@ form button:hover {
     
 }
 
-/* Footer */
-.footer {
-    background-color: #333;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-}
-
 /* Mobile Styles */
 @media (max-width: 1280px) {
     .wrapper {
@@ -378,18 +368,6 @@ form button:hover {
 
     .navbar .container {
         padding-bottom: 0;
-    }
-    .availability-box {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    
-    .availability-field {
-        width: 100%;
-        max-width: 200px;
     }
     
     .availability-box input {

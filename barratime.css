@@ -148,15 +148,6 @@ html {
     color: #9b9b9b;
 }
 
-/* Footer */
-.footer {
-    background-color: #333;
-    color: white;
-    margin-top: 50px;
-    padding: 1rem 0;
-    text-align: center;
-}
-
 /* Mobile Styles */
 @media (max-width: 1176px) {
     .wrapper {
