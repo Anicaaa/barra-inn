@@ -125,6 +125,52 @@
 }
 
 /* ===========================
+   IMAGE WITH TEXT OVERLAY
+=========================== */
+.image-with-box-container {
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    height: 600px;
+    margin: 5px auto;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.background-image {
+    width: 70%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    bottom: 0;
+    width: 45%;
+    background-color: #f5f5f5;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+}
+
+.text-overlay h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.text-overlay p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #9b9b9b;
+}
+
+/* ===========================
    BOOK BTN
 =========================== */
 .book-button {
@@ -174,6 +220,43 @@
     color: white;
     padding: 1rem 0;
     text-align: center;
+}
+
+@media (max-width: 1176px) {
+    .image-with-box-container {
+        display: block;
+        height: auto;
+    }
+    
+    .background-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+    
+    .text-overlay {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        top: -25px;
+        right: -15px;
+        padding: 1.5rem;
+        background-color: #f5f5f5;
+    }
+    
+    .text-overlay h2 {
+        font-size: 1.5rem;
+    }
+    
+    .text-overlay h2 {
+        font-size: 1.5rem;
+    }
+    
+    .text-overlay p {
+        font-size: 0.95rem;
+    }
 }
 
 @media (max-width: 576px) {
