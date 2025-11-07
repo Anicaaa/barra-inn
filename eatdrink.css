@@ -170,7 +170,6 @@ form select {
     margin-bottom: 1.5rem;
     border: none;
     border-bottom: 2px solid #ccc;
-    /* Underline */
     background: transparent;
     font-size: 1rem;
     transition: border-color 0.3s ease;
@@ -178,13 +177,11 @@ form select {
     color: grey;
 }
 
-/* On focus, underline turns blue */
 form input:focus,
 form select:focus {
     border-bottom-color: rgb(100, 100, 100);
 }
 
-/* Submit button style */
 form button {
     width: 100%;
     padding: 0.75rem;

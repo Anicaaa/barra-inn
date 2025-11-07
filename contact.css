@@ -93,7 +93,3 @@ html {
   .popup.hidden {
     display: none;
   }
-  
-/* Mobile Styles */
-@media (max-width: 768px) {
-}
